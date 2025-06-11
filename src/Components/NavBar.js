@@ -17,9 +17,9 @@ const NavBar = () => {
       <nav>
         <div className="nav-div flex flex-col md:flex-row">
           <div className="nav-bar">
-            <div className="logo0 flex justify-around mt-5 gap-20">
+            <div className="logo0 flex justify-around mt-5 gap-20 border-t-1 border-white">
               <h1>
-                <img src={Logo} alt="not found" />
+                <img className="" src={Logo} alt="not found" />
               </h1>
               <PiList
                 className="list text-white block md:hidden "

@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div style={{ backgroundImage: `url(${HomeBack})` }} className="home h-screen">
       <NavBar />
-      <div className="lg:mx-48 lg:my-5 sm:my-5 sm:mx-5">
+      <div className="lg:mx-48 lg:my-9 sm:my-5 sm:mx-5">
         <div className="row text-white">
           <div className="col-md-8">
             <div className="space-col">
@@ -26,7 +26,7 @@ const Home = () => {
           <div className="col-md-4">
             <div>
               <div className="circle">
-                <h1 className="font-belle text-[1.50rem] text-center py-24 font-extralight ">EXPLORE</h1>
+                <h1 className="font-belle text-[1.50rem] text-center py-24 font-extralight">EXPLORE</h1>
               </div>
             </div>
           </div>

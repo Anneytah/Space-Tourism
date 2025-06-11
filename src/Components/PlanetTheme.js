@@ -57,7 +57,7 @@ export const PlanetTheme = () => {
     const selectedPlanetData = data.find(planet => planet.title === selectedPlanet);
 
     return (
-        <section className='max-w-screen-xl mx-auto grid lg:grid-cols-12 grid-cols-2 h-screen'>
+        <section className='max-w-screen-xl mx-auto grid lg:grid-cols-12 grid-cols-2 h-full pb-14'>
             <div className='col-span-7'>
                 <img src={selectedPlanetData.image} alt={selectedPlanetData.title} srcset="" />
             </div>
@@ -69,9 +69,9 @@ export const PlanetTheme = () => {
                         </p>
                     ))}
                 </div>
-                <div className='planet-description flex flex-col  gap-2 text-white'>
+                <div className='planet-description flex flex-col gap-2 text-white'>
                     <h1 className='planet-title text-8xl  font-normal font-serif'>{selectedPlanetData.title}</h1>
-                    <p className='text-[15px]'>{selectedPlanetData.details}</p>
+                    <p className='text-lg text-[#becce8] font-barlowCondensed'>{selectedPlanetData.details}</p>
                 </div>
                 <div className='planet-parameters flex gap-16 my-3 border-t-[1px] text-white'>
                     <div className='flex flex-col mt-4'>

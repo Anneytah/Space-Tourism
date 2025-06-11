@@ -13,13 +13,11 @@ import Crew from "./Pages/Crew";
 import NoPage from "./Pages/NoPage";
 import Destination from "./Pages/Destination";
 import DestinationImg from "./images/DesinationImg.jpg";
+import Technology from "./Pages/Technology";
 
 function App() {
   return (
     <div style={{ backgroundImage: `url(${DestinationImg})`, backgroundSize:'cover', backgroundPosition:'center', height:'100%', width:'100%'}}>
-      {/* <NavBar />
-      <Home />
-      <Destination /> */}
       
       <BrowserRouter>
         <Routes>
@@ -37,12 +35,14 @@ function App() {
             element={<Crew />}
           />
           <Route
+            path="/technology"
+            element={<Technology />}
+          />
+          <Route
             path="*"
-            // element={<Navigate to="/" />}
             element={<NoPage />}
           />
         </Routes>
-        {/* </Router> */}
       </BrowserRouter>
     </div>
   );
